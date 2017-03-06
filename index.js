@@ -5,6 +5,9 @@ function priceCalculator(bPrice,pp,cat){
                FD : 0.13,
         EL: 0.02}; // Material Markup rate, use code to define the material type
   
+  //Step 0: Check base price
+  if(bPrice<=0) return 0;
+  
   //Step 1: Calculate the price after flat markup
   var fPrice = +(bPrice * (1+flatMR)).toFixed(2);
   //console.log("the step 1 result is:"+fPrice);
