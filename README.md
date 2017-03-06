@@ -16,7 +16,9 @@ test is the test function. return boolean values. true -- pass, false -- failed
 Test examples:
 
 console.log("the result is: "+test(priceCalculator(5432.00,1,"PH"),6199.81));
+
 console.log("the result is: "+test(priceCalculator(1299.99,3,"FD"),1591.58));
+
 console.log("the result is: "+test(priceCalculator(12456.95,4,"OT"),13707.63));
 
 
